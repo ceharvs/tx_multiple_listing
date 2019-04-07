@@ -9,10 +9,10 @@ import pandas as pd
 
 def read_data():
     """Read in the data Files"""
-    wl_additions = pd.read_csv('../data/WLAdditions.csv')
-    transplants = pd.read_csv('../data/Transplants.csv')
-    wl_removals = pd.read_csv('../data/WLRemoval.csv')
-    wl = pd.read_csv('../data/WL.csv')
+    wl_additions = pd.read_csv('data/WLAdditions.csv')
+    transplants = pd.read_csv('data/Transplants.csv')
+    wl_removals = pd.read_csv('data/WLRemoval.csv')
+    wl = pd.read_csv('data/WL.csv')
 
     # Remove commas from the data
     wl_additions['WL-Add-2017-Candidates'] = wl_additions['WL-Add-2017-Candidates'].str.replace(",", "").astype(int)
